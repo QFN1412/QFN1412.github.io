@@ -21,14 +21,14 @@
     var CONFIG = {"hostname":"qfn1412.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="�����޷��㣡��">
+  <meta name="description" content="冰冻罗非鱼！？">
 <meta property="og:type" content="website">
-<meta property="og:title" content="�෽">
+<meta property="og:title" content="青方">
 <meta property="og:url" content="https://qfn1412.github.io/archives/index.html">
-<meta property="og:site_name" content="�෽">
-<meta property="og:description" content="�����޷��㣡��">
+<meta property="og:site_name" content="青方">
+<meta property="og:description" content="冰冻罗非鱼！？">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:author" content="�෽">
+<meta property="article:author" content="青方">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="https://qfn1412.github.io/archives/">
@@ -44,7 +44,7 @@
   };
 </script>
 
-  <title>归档 | �෽</title>
+  <title>归档 | 青方</title>
   
 
 
@@ -95,10 +95,10 @@
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">�෽</h1>
+      <h1 class="site-title">青方</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
-      <p class="site-subtitle" itemprop="description">�Ե�ɶ�أ���</p>
+      <p class="site-subtitle" itemprop="description">吃点啥呢？！</p>
   </div>
 
   <div class="site-nav-right">
@@ -275,10 +275,10 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="�෽"
+    <img class="site-author-image" itemprop="image" alt="青方"
       src="/images/avatar.png">
-  <p class="site-author-name" itemprop="name">�෽</p>
-  <div class="site-description" itemprop="description">�����޷��㣡��</div>
+  <p class="site-author-name" itemprop="name">青方</p>
+  <div class="site-description" itemprop="description">冰冻罗非鱼！？</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
@@ -326,7 +326,7 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">�෽</span>
+  <span class="author" itemprop="copyrightHolder">青方</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
@@ -353,6 +353,26 @@
       <i class="fa fa-eye"></i>
 </span>
     <span>总访问量&nbsp<span id="busuanzi_value_site_pv"></span>&nbsp次</span>
+
+<!-- 网站运行时间的设置 -->
+<span id="timeDate">载入天数...</span>
+<span id="times">载入时分秒...</span>
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("27/7/2022 12:00:00");//此处修改你的建站时间或者网站上线时间
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+    }
+    setInterval("createtime()",250);
+</script>
 
         
 
